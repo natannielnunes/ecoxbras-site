@@ -5,63 +5,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ecoxbras - Soluções Ambientais</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f5f3;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #388e3c;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1505842465776-3b4953ca4f61');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Ecoxbras</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#problemas">Problemas</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <p>Soluções sustentáveis para um futuro melhor</p>
   </header>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-  <section class="banner">
-    <h2>Soluções Sustentáveis para Cidades Inteligentes</h2>
-  </section>
+  <div class="hero">
+    <h1>Drenagem Urbana Sustentável</h1>
+    <p>Transformamos ideias em soluções ecológicas</p>
+  </div>
 
   <section id="sobre">
-    <h2>Quem Somos</h2>
-    <p>Somos especialistas em drenagem urbana sustentável, desenvolvendo projetos baseados em soluçõesinovadoras como pavimentos permeáveis, jardins de chuva e caixas de retenção subterrâneas.</p>
-    <h2>Nossa Misão</h2>
-    <p>Desenvolver soluções urbanas sustentáveis que melhorem a qualidade de vida nas cidades, promovendo o equilíbrio entre desenvolvimento urbano e preservação ambiental.</p>
-    <h2>Visão</h2>
-    <p>Ser referência em inovação ambiental para centros urbanos, criando cidades mais verdes, inteligentes e resilientes.</p>
-    <img src="imagens/equipe.jpg" alt="Equipe Ecoxbras">
-  </section>
-
-  <section id="problemas">
-    <h2>Problemas</h2>
-    <p>Alagamentos.</p>
+    <h2>Sobre Nós</h2>
+    <p>A Ecoxbras é uma empresa especializada em soluções ambientais com foco em drenagem urbana sustentável, oferecendo serviços inovadores e eficientes para combater os alagamentos e promover o desenvolvimento urbano consciente.</p>
   </section>
 
   <section id="servicos">
     <h2>Serviços</h2>
-    <div class="servicos-grid">
-      <div><img src="imagens/drenagem.png"><h3>Drenagem Urbana</h3></div>
-      <div><img src="imagens/caixa-retencao.png"><h3>Caixa de Retenção</h3></div>
-      <div><img src="imagens/pavimento.png"><h3>Pavimento Permeável</h3></div>
+    <div class="grid">
+      <div class="card">
+        <h3>Projetos de Drenagem</h3>
+        <p>Elaboração de projetos de drenagem urbana com técnicas modernas e sustentáveis.</p>
+      </div>
+      <div class="card">
+        <h3>Pavimentação Permeável</h3>
+        <p>Implantação de pavimentos que permitem a infiltração da água, reduzindo alagamentos.</p>
+      </div>
+      <div class="card">
+        <h3>Educação Ambiental</h3>
+        <p>Ações de conscientização e educação voltadas à sustentabilidade e preservação ambiental.</p>
+      </div>
     </div>
   </section>
 
   <section id="projetos">
-    <h2>Projetos</h2>
-    <div class="galeria">
-      <img src="imagens/projeto1.jpg" alt="Projeto 1">
-      <img src="imagens/projeto2.jpg" alt="Projeto 2">
+    <h2>Projetos Recentes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615840388043-b2d508b754e8" alt="Projeto 1">
+        <p>Modelo de maquete com caixa de retenção e pavimento permeável no Setor Pedro Ludovico.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617006520070-f55f31bb5f3c" alt="Projeto 2">
+        <p>Simulação de chuva com mini bomba para estudo de escoamento pluvial.</p>
+      </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>Email: contato@ecoxbras.com | Instagram: @ecoxbras</p>
+    <h2>Contato</h2>
+    <p>Email: contato@ecoxbras.com.br</p>
+    <p>Telefone: (62) 99999-9999</p>
+    <p>Endereço: Goiânia - GO</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Ecoxbras - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Ecoxbras. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
